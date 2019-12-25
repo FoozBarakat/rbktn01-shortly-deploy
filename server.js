@@ -4,7 +4,7 @@ var port = 4568;
 
 app.listen(
   // we might need to edit this.
-  //environment.port||
+  process.env.PORT ||
   port);
 
 console.log('Server now listening on port ' + port);
